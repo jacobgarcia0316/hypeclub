@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100;400;600&display=swap");
+body {
+  font-family: "Lexend Tera", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.header {
+  color: white;
+  font-size: 4em;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  padding-left: 35vw;
+  text-transform: uppercase;
+}
+
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/Users/jacobroxasgarcia/Documents/Personal-Projects/ready/sneakers-react/src/assets/banner4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 30vh;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.main-left {
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  padding-left: 2vw;
+  font-style: italic;
+}
+
+.main-header1 {
+  font-size: 2.7rem;
+  margin: 0;
+  text-align: center;
+}
+
+.main-header2 {
+  font-size: 2.2rem;
+}
+
+.main-right {
+  color: white;
+}
+
+.main-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: px;
+}
+.main-btn:hover {
+  cursor: pointer;
+  color: rgb(98, 132, 255);
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    display: block;
+    overflow: hidden;
+  }
+  .main-left {
+    height: -moz-fit-content;
+    height: fit-content;
+    display: block;
+    border: 1px solid white;
+    margin: auto;
+    text-align: center;
+  }
+  .main-header1 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+  }
+  .main-header2 {
+    font-size: 1.5em;
+    color: white;
+  }
+  .main-left {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-btn {
+    color: white;
+  }
+  .main-btn:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}

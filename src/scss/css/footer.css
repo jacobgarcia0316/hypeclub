@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100;400;600&display=swap");
+body {
+  font-family: "Lexend Tera", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 4vh;
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.footer-section {
+  text-align: left;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 2vh;
+  width: 180px;
+}
+
+.footer-header {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.footer-list {
+  list-style: none;
+  font-size: 0.75em;
+  margin-bottom: 2vh;
+  font-weight: lighter;
+}
+.footer-list:hover {
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+
+.email {
+  height: 25px;
+  width: 200px;
+  background-color: black;
+  border-radius: 2px;
+  border: 1px solid white;
+}
+
+.email-label {
+  font-size: 0.6em;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.bottom-header {
+  margin-left: 5vw;
+  font-size: 1em;
+}
+
+.trademark {
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+
+.bottom-list {
+  list-style: none;
+  display: inline;
+  margin-right: 5vw;
+  font-weight: lighter;
+  padding: 5px;
+}
+.bottom-list:hover {
+  cursor: pointer;
+  transition: ease-in-out 200ms;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-title {
+    text-align: center;
+  }
+  .footer-main {
+    margin-left: 10vw;
+  }
+  .footer-bottom {
+    display: block;
+    text-align: center;
+  }
+  .bottom-header {
+    font-size: 0.9em;
+  }
+  .trademark {
+    font-size: 0.5em;
+  }
+  .bottom-list {
+    font-size: 0.7em;
+    margin: auto 5vw;
+    padding-bottom: 2vh;
+  }
+  .bottom-list:hover {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}

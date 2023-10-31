@@ -1,0 +1,110 @@
+@import './config.scss';
+
+.header {
+    color: white;
+    font-size: 4em;
+    width: fit-content;
+    position: absolute;
+    padding-left: 35vw;
+    text-transform: uppercase;
+}
+
+.main-container {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/Users/jacobroxasgarcia/Documents/Personal-Projects/ready/sneakers-react/src/assets/banner4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30vh;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.main-left {
+    width: 50%;
+    height: fit-content;
+    color: white;
+    // background-color: rgb(245, 245, 245, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    padding-left: 2vw;
+    font-style: italic;
+}
+
+.main-header1 {
+    font-size: 2.7rem;
+    margin: 0;
+    text-align: center;
+}
+
+.main-header2 {
+    font-size: 2.2rem;
+}
+
+.main-right {
+    color: white;
+}
+
+.main-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: px;
+
+    &:hover {
+        cursor: pointer;
+        color: $accent-color2;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 800px) {
+
+    // .header {
+    //     width: 25%;
+    //     text-align: center;
+
+    // }
+    .main-container {
+        display: block;
+        overflow: hidden;
+    }
+    .main-left {
+        // background-color: rgb(255, 255, 255,0.4);
+        height: fit-content;
+        display: block;
+        border: 1px solid white;
+        margin: auto;
+        text-align: center;
+    }
+    .main-header1 {
+        font-size: 3em;
+        color: white;
+        text-align: center;
+
+    }
+    .main-header2 {
+        font-size: 1.5em;
+        color: white;
+    }
+
+    .main-left {
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-btn {
+        color: white;
+
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
